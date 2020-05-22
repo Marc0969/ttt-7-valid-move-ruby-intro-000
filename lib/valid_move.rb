@@ -1,5 +1,5 @@
 def valid_move(position_taken?)
-  if position_taken?(board[0,8] =0
+  if position_taken?(board[0,8] = " ")
     true
   elsif position_taken(board[0,8] = "X" || "O")
     true

@@ -3,7 +3,7 @@ def valid_move(position_taken?)
     true
   elsif position_taken(board[0,8] = "X" || "O")
     true
-  else
+  else position_taken(board[!0,8])
     false || nil
   end
 end

@@ -1,7 +1,9 @@
 def valid_move(position_taken?)
-  if position_taken?(board = '" ", " ", " ", " ", " ", " ", " ", " ", " "', index[0,8])
+  if position_taken?(board = '" ", " ", " ", " ", " ", " ", " ", " ", " "', index = 0)
     true
-  else position_taken(board[!0,8])
+  elsif position_taken(board = '" ", " ", " ", " ", " ", " ", " ", " ", " "', board = 0,8)
+    true
+  else
     false || nil
   end
 end

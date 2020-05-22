@@ -1,21 +1,21 @@
-def valid_move(position_taken?)
+def valid_move(board, index)
   if position_taken?(board[0,8] = " ")
     true
-  elsif position_taken(board[0,8] != "X" || "O")
+  elsif position_taken?(board[0,8] != "X" || "O")
     true
-  else position_taken(board[0,8] = "X" || "0")
+  else position_taken?(board[0,8] = "X" || "0")
     false || nil
   end
 end
 
-def position_taken?(board = '" ", " ", " ", " ", " ", " ", " ", " ", " "', index = [0])
-  if board[0] == " "
+def position_taken?(board, index)
+  if board[index] == " "
   false
-elsif board[0] == ""
+elsif board[index] == ""
   false
-elsif board[0] == nil
+elsif board[index] == nil
   false
-else board[0] == "X" || "O"
+else board[index] == "X" || board[index] == "O"
   true
   end
 end

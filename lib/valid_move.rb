@@ -1,4 +1,4 @@
-def valid_move(board, index)
+def valid_move?(board, index)
   if position_taken?(board[0,8] = " ")
     true
   elsif position_taken?(board[0,8] != "X" || "O")
